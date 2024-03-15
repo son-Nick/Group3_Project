@@ -1,0 +1,444 @@
+
+    *{
+        margin: 2px;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(kerugoya.jpg);
+        background-attachment: scroll;
+        color: #000;
+        font-weight: 500;
+        text-align: left;
+        margin: auto;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+ 
+    #head-1 {
+        display: grid;
+        background-color: /*#04aa6d*/ #044;
+        color: #ccc;
+        border-radius: 25px;
+        justify-content: flex-start;
+        font-family: 'Brandon Grotesque', sans-serif;
+    }
+
+    .table {
+        background-color: rgba(224, 171, 171, 0.2);
+        width: 14%;
+        float: left;
+    }
+
+    .table2 {
+        float: right;
+        background-color: rgba(224, 171, 171, 0.2);
+        width: 14%;
+    }
+
+    #tsize {
+        margin: 1px;
+        padding: 1px;
+    }
+
+    .contact {
+        background-color: #044;
+        position: relative;
+        animation-duration: 10s;
+        animation: pulse 2s ease-in-out infinite;
+        animation-iteration-count: infinite;
+    }
+
+    #services {
+        color: #004;
+    }
+
+
+     .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            background-color:  rgba(0, 217, 255, 0.212) /*#050;*/;
+            color: #000;
+            backdrop-filter: blur(10px);
+            box-shadow: rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            /*align-items: flex-start;*/
+            justify-content: flex-start;
+    }
+
+    .sidebar li {
+        width: 50%;
+    }
+
+    .sidebar a {
+        width: 100%;
+        color: #003;
+    }
+
+    .sidebar nav-links {
+        color: #003;
+    }
+
+    .form {
+        margin-bottom: 25px;
+        margin-left: 25px;
+    }
+
+    a {
+        width: 70%; 
+    }
+
+    .head-1 #head-1{
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.089);
+        color: #044;
+    }
+
+    .container {
+        padding: 3rem;
+    }
+
+    .slider {
+        display: flex;
+        aspect-ratio: 16/9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider img {
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+    }
+
+    #placeholder {
+        color: #000;
+    }
+
+    .slider-nav {
+        display: none;
+        column-gap: 1rem;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        background-color: #fff;
+    }
+
+    .slider-nav a {
+        width: 0.6rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        opacity: 0.75%;
+        transform: opacity ease 250ms;
+        padding: 1rem;
+    }
+
+    .slider-nav a:hover {
+        opacity: 100%;
+    }
+
+    .slider-wrapper {
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+        padding-left: 2rem;
+    }
+
+    .navFaqs {
+        background-color: rgba(220, 214, 214, 0.6);
+        color: #000;
+    }
+
+    .navFaqs a{
+        color: #000;
+    }
+     
+    button {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        height: 1.5rem;
+        padding: 0 3rem;
+        font-family: inherit;
+        font-size: 1.25rem;
+        border: 2px solid #04aa6d;
+        font-size: 16px;
+        border-radius: 0.5rem;
+        background: #00ff;
+        color: #f7f7f7;
+        box-shadow: 0 0 5px #044, 0 0 25px #044;
+        cursor: pointer;
+        outline: none; 
+        transition-duration: 0.4s;
+    }
+ 
+    button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transform: 1s;
+    }
+
+    button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 1s;
+    }
+
+    button:hover span {
+        padding-right: 25px;
+    }
+
+    button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    input {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: #000;
+        border-width: 0.2rem;
+    }
+
+    .button:hover {
+        box-shadow: 0 0 5px #250, 0 0 25px #250, 0 0 50px #250, 0 0 100px #250, 0 0 200px #250;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        background-color: #00ff;
+        box-shadow: #0044;
+        height: 80px;
+        text-align: center;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    nav a {
+        height: 90%;
+        padding: 0 25px;
+        text-decoration: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: #fff;
+        width: 50px;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+     nav a:hover {
+        background-color: #00ff;
+        color: #fff;
+     }
+
+     nav li {
+        height: 50px; 
+     }
+
+    nav ul {
+        width: 100%; /*To make it span the whole width of it's container*/
+        /*removes the list bullets. The list-style aligns list items*/
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li:first-child {
+        margin-right: auto;
+    }
+
+    nav a:hover {
+        background-color: #ccc;
+        color: black;
+    }
+
+    .page {
+        padding: 60px 10px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .page-faqs {
+        display: flex;
+        text-align: center;
+        padding: 20px 15px;
+        margin: auto;
+        height: auto;
+        min-height: 10vh;
+    }
+
+    .link {
+        display: flex;
+        list-style: none;
+    }
+
+ ul li a:hover {
+        background-color: #004;
+        color: #ffffff;
+    }
+
+    #oUr-services {
+        height: 50px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        right: 0;
+        position:absolute;
+        background-color: #f9f9f9;
+        min-height: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        align-content: left;
+    }
+
+    .search {
+        background: rgba(220, 214, 214, 0.911);
+        border-radius: 10px 0 10px;
+        border-color: rgba(0, 85, 0, 0.842);
+    }
+
+    .search {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: 200;
+        width: 200px;
+        height: 40px;
+        background: linear-gradient(to right, #006, #004, #010);
+        border: 1px;
+        margin-top: 13px;
+        color: #fff;
+        border-right: none;
+        float: left;
+        padding: 10px; 
+    }
+
+    .btn-default {
+        width: 100px;
+        height: 40px;
+        background-color: linear-gradient(to left, #006, #004, #010);
+        border: rgb(29, 214, 214);
+        color: #fff;
+        font-size: 16px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .btn:hover {
+        background-color: #bbb;
+        color: #009;
+    }
+
+    .srch:focus {
+        outline: none;
+    }
+
+    .srch {
+        background-color: #ccc;
+        color: #000;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ccc;
+        color: #000;
+        z-index: 1;
+        padding: 12px 16px;
+        min-height: 150px;
+    }
+
+    #quick-contact {
+        align-items: center;
+        color: #000;
+        opacity: 0.9;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        background-color: #044;
+        color: #f9f9f9;
+        text-align: center;
+        height: 40px;
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        bottom: 0;
+    } 
+
+    /*Appointment Form*/
+    #appointment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(to right, #004, #044, #ff4500);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #appointment input {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+
+    @media(max-width: 800px) {
+        .hideOnMobile {
+            display: none;
+        }
+        .menu-button {
+            display: block;
+        }
+    }
+
+    @media(max-width: 400px) {
+        .sidebar {
+            width: 100%;
+        }
+    }

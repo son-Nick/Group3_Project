@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Appointment Application Form
+        </title>
+        <link rel="stylesheet" href="styles3.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\Hp\Desktop\Hospital project\project.html">Home</a></li>
+                <li><a href="C:\Users\Hp\Desktop\Hospital project\Our services.html">Services</a></li>
+                <li><a href="C:\Users\Hp\Desktop\Hospital project\FAQs.html">FAQs</a></li>
+                <li><a href="C:\Users\Hp\Desktop\Hospital project\contacts&address.html">Address</a></li>
+            </ul>
+        </nav>
+        <section id="appointment" class="page">
+            <h3 class="animate_animated animate_fadeIn animate_infinite"><u>Make An Appointment Today</u></h3>
+            Apply with us to get the best care with our esteemed healthcare practitioners. <br>
+            Fill out the form below to apply.
+            <div>
+                
+            <form action="GET" id="appointment-form" name="appointmentForm" id="appointment">
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="myname" class="form-control" placeholder="Enter your two names" required><br>
+                <label id="email" for="email">Email:</label><br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required><br>
+                <label for="country">Country:</label> <br>
+                <select name="country" id="country">
+                <option value="select">--Select Your Country--</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+                <option value="rwanda">Rwanda</option>
+                <option value="burundi">Burundi</option>
+                <option value="ethiopia">Ethiopia</option>
+                <option value="congo">D.R Congo</option>
+                <option value="zimbabwe">Zimbabwe</option>
+                <option value="zambia">Zambia</option>
+                <option value="ghana">Ghana</option>
+            </select> <br>
+            <label id="file" for="file">Upload Your Documents: <br>
+                (National ID Photos or Passport)</label><br>
+                <div class="input"><input type="file"  multiple required><br></div>
+                <label for="message">Your Message:</label> <br>
+                <textarea name="Your Message" id="textarea" cols="30" rows="10" placeholder="Type Your Message"></textarea> <br>
+                <label for="appointment_date" id="appointment.date">Appointment Date:</label><br>
+                <input type="date" name="appointment_date" id="appointment_date"><br>
+                <button type="submit" id="submit" class="submit-button" style="vertical-align:middle" ><span><b>Submit</b></span></button><br>
+            </form>
+        </div>
+        </section>
+        <footer>
+            <div class="container__footer">
+                <p>&copy; 2024 Kerugoya County Referral Hospital. All rights reserved.&reg;</p>
+               </div> 
+        </footer>
+
+        <script>
+          function goSubmit() {
+            const button = document.querySelector('#submit')
+            
+
+           
+alert('Thanks Your appointment has been submited succesfuly! We shall get back to you.');
+}
+        </script>
+    </body>
+</html>

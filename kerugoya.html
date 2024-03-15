@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerugoya County Referral Hospital</title>
+    <link rel="stylesheet" href="styleme.css">
+</head>
+<body>
+    <header>
+        <h1><marquee behavior="" direction="left"><b>Welcome To Kerugoya County Referral Hospital. We Care.</b></h1></marquee>
+    </header>
+    <nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#our-contacts">Our Contacts</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#photos">Gallery</a></li>
+        <li><a href="#treatment-services">Our Treatment &amp; Services</a></li>
+        <li><a href="#health-tips">Health Tips</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="#our-contacts">Our Contacts</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#photos">Gallery</a></li>
+        <li><a href="#treatment-services">Our Treatment &amp; Services</a></li>
+        <li><a href="#health-tips">Health Tips</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+    </nav>
+
+
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+            <img src="Entrance.jpg" alt="" class="entrance">
+        </div>
+
+        <div class="container">
+            <label for="yname"><b>Your Name:</b></label> <br>
+            <input type="text" placeholder="Enter Your Full Name" name="yname" required> <br>
+            <label for="email"><b>Enter Your E-mail:</b></label> <br>
+            <input type="text" placeholder="Enter E-mail" required><br>
+            <label for="psw"><b>Password:</b></label><br>
+            <input type="password" placeholder="Enter Password" required><br>
+            <button type="submit">Login</button><br>
+            <label for=""><input type="checkbox" checked="checked" name="remember">Remember me</label><br>
+        </div>
+        
+        <div class="container" style="background-color: #f1f1f1;"><button class="cancelbtn" type="button">Cancle</button>
+        <span class="psw">Forgot <a href="#">password?</a></span></div>
+    </form>
+    
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>Home-based Health Care Portal</title>
+<link rel="stylesheet" type="text/css"href="index.css">
+
+
+</head>
+<body style="background-color: #f2f2f2;">
+    <h1>Welcome to our Home-based Health Care Portal.</h1>
+   <u><h2>services</h2></u>
+ <p>Here are the services we offer:</p>
+    <ul>
+      <li>Primary Care</li>
+      <li>Specialty Care</li>
+      <li>Emergency Care</li>
+      <li>Diagnostic Services</li>
+      <li>Pharmacy Services</li>
+    </ul>
+    <p>To learn more about each service, please click on the links below:</p>
+    <ul>
+      <li><a href="#primary-care">Primary Care</a></li>
+      <li><a href="#specialty-care">Specialty Care</a></li>
+      <li><a href="#emergency-care">Emergency Care</a></li>
+      <li><a href="#diagnostic-services">Diagnostic Services</a></li>
+      <li><a href="#pharmacy-services">Pharmacy Services</a></li>
+    </ul>
+    <hr>
+    <h2 id="primary-care">Primary Care</h2>
+    <p>We offer comprehensive primary care services for all ages, including:</p>
+    <ul>
+      <li>Preventive care</li>
+      <li>Sick visits</li>
+      <li>Chronic disease management</li>
+      <li>Vaccinations</li>
+   
+    </ul>
+<p>Our team of healthcare professionals will work with you to develop a personalized care plan that meets your unique needs.</p>
+    <hr>
+    <h2 id="specialty-care">Specialty Care</h2>
+    <p>Our Specialty care services are provided by healthcare professionals who have advanced training and expertise in specific areas of medicine.<br>We provide specialized care for a range of conditions, such as:</p>
+    <ul>
+      <li>Cardiology</li>
+      <li>Dermatology</li>
+      <li>Endocrinology</li>
+      <li>Gastroenterology</li>
+    </ul>
+    <hr>
+    <h2 id="emergency-care">Emergency Care</h2>
+    <p>In the event of a medical emergency, our team is available 24/7 to provide immediate care and assistance.We work closely with local emergency services to ensure that you receive the best possible care in a timely manner.
+
+Therefore In case of a medical emergency, please call 911 or go to the nearest emergency room.</p>
+    <hr>
+    <h2 id="diagnostic-services">Diagnostic Services</h2>
+    <p>Our diagnostic services include a range of tests and procedures that help us diagnose and treat medical conditions. We use the latest technology and equipment to ensure accurate and timely results.<br><br> Our  diagnostic services include:</p>
+    <ul>
+      <li>X-rays</li>
+      <li>Ultrasounds</li>
+      <li>MRI</li>
+      <li>CT scan</li>
+    </ul>
+    <hr>
+    <h2 id="pharmacy-services">Pharmacy Services</h2>
+    <p>We offer a range of pharmacy services, including prescription medications, over-the-counter medications, and medical supplies. Our team of pharmacists will work with you to ensure that you receive the medications and supplies you need to manage your health.</p>
+	<h1>Book Appointment</h1>
+	<form method="post" action="connect.php">
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email"><br><br>
+		<label for="appointment_date">Appointment Date:</label>
+		<input type="date" name="appointment_date" id="appointment_date"><br><br>
+		<label for="message">Message:</label>
+		<textarea name="message" id="message"></textarea><br><br>
+		<input type="submit" value="Book Appointment">
+</form>
+
+	<label for="country">Country of birth:</label>
+<select name="country" id="country">
+  <option value="">--Please select your country--</option>
+  <option value="Algeria">Algeria</option>
+  <option value="Angola">Angola</option>
+  <option value="Benin">Benin</option>
+  <option value="Botswana">Botswana</option>
+  <option value="Burkina Faso">Burkina Faso</option>
+  <option value="Burundi">Burundi</option>
+  <option value="Cabo Verde">Cape Verde</option>
+  <option value="Cameroon">Cameroon</option>
+  <option value="Central African Republic">Central African Republic</option>
+  <option value="Chad">Chad</option>
+  <option value="Comoros">Comoros</option>
+  <option value="Congo, Democratic Republic of the Congo">Congo, Democratic Republic of the Congo</option>
+  <option value="Congo-Brazzaville, Republic of the Congo">Congo-Brazzaville, Republic of the Congo</option>
+  <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+  <option value="Djibouti">Djibouti</option>
+  <option value="Egypt">Egypt</option>
+  <option value="Equitorial Guinea">Guinea</option>
+  <option value="Eritrea">Eritrea</option>
+  <option value="Eswatini">Kingdom f Eswatini</option>
+  <option value="Kenya">Kenya</option>
+  <option value="Uganda">Uganda</option>
+  <option value="Tanzania">Tanzania</option>
+	</form>
+ 
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
